@@ -35,6 +35,6 @@ export const signin = async (req, res) => {
       res.send({ error: "Invalid email/password." });
     }
   } else {
-    res.send({ error: "Login failed." });
+    res.send({ error: "Invalid email/password." });
   }
 };

@@ -20,6 +20,13 @@ const UserModel = new Schema(
       type: String,
       required: true,
     },
+    favorites: [
+      {
+        type: Schema.Types.ObjectId,
+        ref: "Favorite",
+        default: [],
+      },
+    ],
   },
   {
     timestamps: true,
